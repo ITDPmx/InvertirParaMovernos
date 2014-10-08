@@ -337,9 +337,6 @@ font-family: 'PT Sans', sans-serif;
 }
 
 @media only screen and (max-width: 640px){
-	.nav .navbar-nav li a{
-		font-size: 14px;
-	}
 	.info{
 		height: 20vh;
 		width: 10vw;
@@ -364,11 +361,5 @@ font-family: 'PT Sans', sans-serif;
 		position: fixed;
 		top: 0;
 		width: 100vw;
-	}
-}
-
-@media (max-width: 768px){
-	.navbar-nav li a{
-		font-size: 12px !important;
 	}
 }
