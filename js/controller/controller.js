@@ -110,7 +110,7 @@ function selectZM(valor){
 			.attr('data-counturl', 'http://itdp.mx/invertirparamovernos/')
 			.attr('data-via', 'ITDPmx')
 			.attr('data-lang', 'es')
-			.attr('data-text', 'Esto invierte la Zona Metropolitana de '+igual+' #InvertirParaMovernos');
+			.attr('data-text', 'Esto invierte la ZM de '+igual+' #InvertirParaMovernos');
 			$('#shareBtn').append(tweetBtn);
 			twttr.widgets.load();
 		$(valor).each(function(index, props) {
@@ -174,7 +174,7 @@ function zoomToFeatureZM(e) {
 		.attr('data-counturl', 'http://itdp.mx/invertirparamovernos/')
 		.attr('data-via', 'ITDPmx')
 		.attr('data-lang', 'es')
-		.attr('data-text', 'Esto invierte la Zona Metropolitana de '+e.target._popupContent+' #InvertirParaMovernos');
+		.attr('data-text', 'Esto invierte la ZM de '+e.target._popupContent+' #InvertirParaMovernos');
 		$('#shareBtn').append(tweetBtn);
 		twttr.widgets.load();
 }
@@ -337,13 +337,13 @@ $('body').on('click','.horizontal',function(e){
 	var texto;
 	if (tituloLeyenda == "Transporte Público 2011" | tituloLeyenda == "Transporte Público 2012" | tituloLeyenda == "Transporte Público 2013") {
 
-		texto = 'Esto invirtió la Zona Metropolitana de '+zona+ ' en '+datoTwitter[0]+" "+datoTwitter[1]+' en el año '+datoTwitter[2]+" #InvertirParaMovernos";
+		texto = 'Esto invirtió la ZM de '+zona+ ' en '+datoTwitter[0]+" "+datoTwitter[1]+' en el año '+datoTwitter[2]+" #InvertirParaMovernos";
 	}
 	else if (tituloLeyenda == "Infraestructura Vial 2011" | tituloLeyenda == "Infraestructura Vial 2012" | tituloLeyenda == "Infraestructura Vial 2013") {
-		texto = 'Esto invirtió la Zona Metropolitana de '+zona+ ' en '+datoTwitter[0]+" "+datoTwitter[1]+' en el año '+datoTwitter[2]+" #InvertirParaMovernos";
+		texto = 'Esto invirtió la ZM de '+zona+ ' en '+datoTwitter[0]+" "+datoTwitter[1]+' en el año '+datoTwitter[2]+" #InvertirParaMovernos";
 	}
 	else{
-		texto = 'Esto invirtió la Zona Metropolitana de '+zona+ ' en '+datoTwitter[0]+' en el año '+datoTwitter[1]+" #InvertirParaMovernos";
+		texto = 'Esto invirtió la ZM de '+zona+ ' en '+datoTwitter[0]+' en el año '+datoTwitter[1]+" #InvertirParaMovernos";
 	}
 
 	$('#shareBtn iframe').remove();
